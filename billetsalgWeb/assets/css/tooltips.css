@@ -1,0 +1,48 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    font-family: 'Proxima Nova';
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    visibility: hidden;
+    width: 100px;
+    background-color: #fafafa;
+    color: #1a2027;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 999;
+    top: 175%;
+    left: 50%;
+    margin-left: -50px;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #fafafa transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltipactive .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

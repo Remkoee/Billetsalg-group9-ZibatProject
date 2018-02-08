@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Billetsalg, first project for my second semester at ZIBAT.">
+		<meta name="author" content="Stefan Cristian">
+		<meta name="keywords" content="billetsalg, project, campus køge">
+        
+		<title>Billetsalg - Zibat Project</title>
+		
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/queries.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <link rel="shortcut icon" href="assets/img/ico/favicon.png">
+        
+	</head>
+	
+    <body>
+        
+        <div class="blur-overlay">
+            <div class="main-search-container">
+                <input type="text" value="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <!-- section > first-section -->
+        <section id="first-section">
+            <header>
+                <div class="logo">
+                    <a href="index.html"><img src="assets/img/logo.png" width="180" alt=""></a>
+                </div>
+                <nav class="nav-media">
+                    <a href="index.html">HOME</a>
+                    <a href="#second-section">EVENTS</a>
+                    <a href="#third-section">OFFERS</a>
+                    <a href="" class="blur-effect-click">
+                        <i class="fas fa-search tooltip tooltipactive" style="font-size: 18px">    <span class="tooltiptext">Search events...</span>
+                        </i>
+                    </a>
+                    <a href=""><i class="fas fa-cart-plus" style="font-size: 18px"></i></a>
+                    <a href="">LOGIN OR REGISTER</a>
+                </nav>
+            </header>
+            <ul id="lightSlider">
+                <li>
+                    <h1>Welcome to Billetsalg, have a look at our featured events.</h1>
+                        <img src="assets/img/slider-item-1.jpg" alt="justice-league">
+                    </li>
+                <li>
+                    <h1>Get your tickets to hottest events, book your tickets now!</h1>
+                    <img src="assets/img/slider-item-2.jpg" alt="animal-zoo">
+                </li>
+                <li>
+                    <h1>Check out upcomming events in your area!</h1>
+                    <img src="assets/img/slider-item-3.jpg" alt="danish-guy">
+                </li>
+            </ul>
+            <!-- carousel > carousel-active-item -->
+            <div class="carousel-active-item">
+                <div class="carousel-active-item-container">
+                    <img src="assets/img/carousel-items/carousel-item-9.jpg" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/carousel-items/carousel-item-2.jpg" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/carousel-items/carousel-item-3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/carousel-items/carousel-item-4.jpg" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/carousel-items/carousel-item-5.jpg" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/carousel-items/carousel-item-6.jpg" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/carousel-items/carousel-item-7.jpg" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/carousel-items/carousel-item-8.jpg" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/carousel-items/carousel-item-1.jpg" alt="">
+                </div>
+            </div>
+            <!-- carousel > carousel-navigation > carousel-items -->
+            <div class="carousel-items">
+                <div>
+                    <img src="assets/img/carousel-items/carousel-item-9.jpg" width="265" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/carousel-items/carousel-item-2.jpg" width="265" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/carousel-items/carousel-item-3.jpg" width="265" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/carousel-items/carousel-item-4.jpg" width="265" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/carousel-items/carousel-item-5.jpg" width="265" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/carousel-items/carousel-item-6.jpg" width="265" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/carousel-items/carousel-item-7.jpg" width="265" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/carousel-items/carousel-item-8.jpg" width="265" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/carousel-items/carousel-item-1.jpg" width="265" alt="">
+                </div>
+            </div>
+        </section>
+        
+        <!-- section > second-section -->
+        <section id="second-section">
+            <div class="second-section-container">
+                <h2>CATEGORIES</h2>
+                <span>Browse through event categories and find exactly what you looking. Find your favorite artists concert, festivals, sporting events in your area and much more!</span>
+                <ul>
+                    <!-- For filtering controls add -->
+                    <li data-filter="all">Show all</li>
+                    <li data-filter="1">Festivals</li>
+                    <li data-filter="2">Art</li>
+                    <li data-filter="3">Music</li>
+                    <li data-filter="4">Theatre</li>
+                    <li data-filter="5">Sport</li>
+                    <li class="loc">Location</li>
+                    <li class="date">Date</li>
+                </ul>
+                <div class="filtr-container">
+                    <div class="filtr-item" data-category="1, 2, 4" data-sort="value">
+                        <img src="assets/img/carousel-items/carousel-item-14.jpg" alt="sample">
+                        <span>
+                            <span style="color: #45c29a; display: block; font-size: 13px; margin: 5px 0;">20 April 2018</span>
+                            <span style="display: block; font-size: 15px; margin: 5px 0;">The Croods</span>
+                            <span style="display: block; font-size: 13px; color: #f80026;">10 tickets left!</span>
+                        </span>
+                    </div>
+                    <div class="filtr-item" data-category="2, 3" data-sort="value">
+                        <img src="assets/img/carousel-items/carousel-item-13.jpg" alt="sample">
+                        <span>
+                            <span style="color: #45c29a; display: block; font-size: 13px; margin: 5px 0;">13 February 2018</span>
+                            <span style="display: block; font-size: 15px; margin: 5px 0;">Disney Pixar's Coco</span>
+                        </span>
+                    </div>
+                    <div class="filtr-item" data-category="2, 1, 3, 4, 5" data-sort="value">
+                        <img src="assets/img/carousel-items/carousel-item-16.jpg" alt="sample">
+                        <span>
+                            <span style="color: #45c29a; display: block; font-size: 13px; margin: 5px 0;">5 May 2018</span>
+                            <span style="display: block; font-size: 15px; margin: 5px 0;">Rango</span>
+                            <span style="display: block; font-size: 13px; color: #f80026;">7 tickets left!</span>
+                        </span>
+                    </div>
+                    <div class="filtr-item" data-category="1, 3, 2, 4" data-sort="value">
+                        <img src="assets/img/carousel-items/carousel-item-1.jpg" alt="sample">
+                        <span>
+                            <span style="color: #45c29a; display: block; font-size: 13px; margin: 5px 0;">13 June 2018</span>
+                            <span style="display: block; font-size: 15px; margin: 5px 0;">Wild Life Zoo</span>
+                        </span>
+                    </div>
+                    <div class="filtr-item" data-category="2, 3, 5" data-sort="value">
+                        <img src="assets/img/carousel-items/carousel-item-5.jpg" alt="sample">
+                        <span>
+                            <span style="color: #45c29a; display: block; font-size: 13px; margin: 5px 0;">23 August 2018</span>
+                            <span style="display: block; font-size: 15px; margin: 5px 0;">Zoo Event</span>
+                            <span style="display: block; font-size: 13px; color: #f80026;">14 tickets left!</span>
+                        </span>
+                    </div>
+                    <div class="filtr-item" data-category="1, 3, 4, 5" data-sort="value">
+                        <img src="assets/img/carousel-items/carousel-item-2.jpg" alt="sample">
+                        <span>
+                            <span style="color: #45c29a; display: block; font-size: 13px; margin: 5px 0;">11 April 2018</span>
+                            <span style="display: block; font-size: 15px; margin: 5px 0;">Wonder Woman</span>
+                        </span>
+                    </div>
+                    <div class="filtr-item" data-category="2, 3" data-sort="value">
+                        <img src="assets/img/carousel-items/carousel-item-3.jpg" alt="sample">
+                        <span>
+                            <span style="color: #45c29a; display: block; font-size: 13px; margin: 5px 0;">5 March 2018</span>
+                            <span style="display: block; font-size: 15px; margin: 5px 0;">Carl Emil Petersen - Live Concert</span>
+                            <span style="display: block; font-size: 13px; color: #f80026;">8 tickets left!</span>
+                        </span>
+                    </div>
+                    <div class="filtr-item" data-category="1, 3, 2" data-sort="value">
+                        <img src="assets/img/carousel-items/carousel-item-9.jpg" alt="sample">
+                        <span>
+                            <span style="color: #45c29a; display: block; font-size: 13px; margin: 5px 0;">17 November 2018</span>
+                            <span style="display: block; font-size: 15px; margin: 5px 0;">Ferdinand</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- section > third-section -->
+        <section id="third-section">
+            <div class="subscribe-container">
+                <h2>SUBSCRIBE TO OUR OFFERS</h2>
+                <span>Always keep up to date with our latest offers and suggestion for next special event that you may have a change to go to!</span><br>
+                <input type="text" value="Name"><input type="text" value="Email">
+                <button>Submit</button>
+                <span class="subscribe-icon"><i class="far fa-envelope-open"></i></span>
+            </div>
+        </section>
+        
+        <!-- section > footer -->
+        <footer id="section-footer">
+            <div class="section-footer-1">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>+45 1234 1234</span><br>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <span>contact@Billetsalg.dk</span>
+                <img src="assets/img/logo.png" width="150" alt="">
+            </div>
+            <div class="section-footer-2">
+                <span>BILLETSALG</span><br>
+                <span>Snedkervej 12 2630 Taastrup CVR No: 10 14 77 51</span>
+            </div>
+            <div class="section-footer-3">
+                <span>SOCIAL</span><br>
+                <span>
+                    <a href="https://www.facebook.com/billetsalg" target="_blank">
+                        <i class="fab fa-facebook" style="font-size: 30px; padding-right: 10px;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/billetsalg-dk-aps" target="_blank">
+                        <i class="fab fa-twitter-square" style="font-size: 30px; padding-right: 10px;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/billetsalg-dk-aps" target="_blank">
+                        <i class="fab fa-linkedin" style="font-size: 30px; padding-right: 10px;"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="section-footer-4">
+                <span>NAVIGATION</span><br>
+                <span>
+                    <a href="#">FAQ</a><br>
+                    <a href="#">Terms & Conditions</a><br>
+                    <a href="#">About us</a><br>
+                    <a href="#">Live chat</a>
+                </span>
+            </div>
+            
+            <!-- section > footer > disclaimer -->
+            <div class="section-footer-disclaimer">
+                <span>Group-9 of INT-Class MMD, ZIBAT - Campus Køge</span>
+                <span>&copy; 2018. All rights reserved.</span>
+            </div>
+            <div class="back-to-top">
+                <a href="#first-section">
+                    <i class="fas fa-angle-up tooltip tooltipactive">
+                        <span class="tooltiptext">Back to top!</span>
+                    </i>
+                </a>
+            </div>
+        </footer>
+        
+        <!-- The magic starts from here -->
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+        <script src="assets/js/aos.js"></script>
+        <script src="assets/js/lightslider.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/jquery.filterizr.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        
+    </body>
+    
+</html>
